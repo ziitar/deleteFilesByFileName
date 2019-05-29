@@ -24,6 +24,3 @@ $ node index.js directoryName fileName  //需要带两个参数，directoryName�
 # 或者
 $ npm start directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件
 ```
-
-## License
-MIT
