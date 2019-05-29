@@ -1,0 +1,27 @@
+{
+  "name": "deletefilesbyfilename",
+  "version": "1.0.0",
+  "description": "map directory to delete files by file name",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ziitar/deleteFilesByFileName.git"
+  },
+  "keywords": [
+    "delete file",
+    "map directory"
+  ],
+  "author": "ziitar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ziitar/deleteFilesByFileName/issues"
+  },
+  "homepage": "https://github.com/ziitar/deleteFilesByFileName#readme",
+  "dependencies": {
+    "async": "^3.0.1"
+  }
+}
