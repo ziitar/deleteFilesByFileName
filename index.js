@@ -4,8 +4,8 @@ const Async = require("async")
 const { deepReadDir } = require("./readFiles.js")
 
 
-function unlinkFiles(name){
-	const files = deepReadDir(name);
+function unlinkFiles(name, reg){
+	const files = deepReadDir(name, reg);
 	Asnyc.each(files, (item, callback)=>{
 		fs.unlink(item, (err)=> {
 			if (err)  callback(err, null);
@@ -20,11 +20,11 @@ function unlinkFiles(name){
 (function (){
 	if (!!process.argv[2] && !!process.argv[3]){
 		if (path.isAbsolute(process.argv[2])){
-			unlinkFiles(path.normalize(process.argv[2]))
+			unlinkFiles(path.normalize(process.argv[2]), process.argv[3])
 		}else {
 			const _path = path.resolve(); 
 			const name = path.resolve(_path, process.argv[2])
-			unlinkFiles(name)
+			unlinkFiles(name, process.argv[3])
 		}
 	}else {
 		console.error('place input directory name and file name')
