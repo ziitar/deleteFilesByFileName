@@ -12,15 +12,15 @@ node v10.15.3及以上
 ## 测试
 ```bash
 # 运行脚本
-$ node test.js directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件
+$ node test.js directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件(支持正则)
 # 或者
-$ npm run test directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件
+$ npm run test directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件(支持正则)
 ```
 
 ## 使用
 ```bash
 # 运行脚本
-$ node index.js directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件
+$ node index.js directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件(支持正则)
 # 或者
-$ npm start directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件
+$ npm start directoryName fileName  //需要带两个参数，directoryName为需要遍历的目录，fileName为需要删除的文件(支持正则)
 ```
